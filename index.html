@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Art Challenge | Showcase Your Talent</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-palette"></i> Global Art Challenge
+            </a>
+            <div class="nav-links">
+                <a href="index.html" class="active">Home</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="rules.html">Rules</a>
+                <a href="faq.html">FAQ</a>
+                <a href="contact.html">Contact</a>
+                <a href="submit.html" class="btn-nav">Submit Art <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>Create. Compete. <span>Get Recognized.</span></h1>
+            <p class="subtitle">Join the world's most exciting digital art competition with over $50,000 in prizes</p>
+            <div class="button-group">
+                <a href="submit.html" class="btn btn-primary">Submit Your Art <i class="fas fa-arrow-right"></i></a>
+                <a href="gallery.html" class="btn btn-outline">View Gallery</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content Sections -->
+    <section class="container">
+        <!-- Featured Artworks -->
+        <div class="featured-artworks">
+            <h2>Featured Submissions</h2>
+            <div class="gallery-grid">
+                <div class="artwork-card" data-category="digital">
+                    <div class="artwork-image">
+                        <img src="https://via.placeholder.com/400x500/1e3a8a/ffffff?text=Digital+Art" alt="Featured Artwork">
+                        <div class="artwork-actions">
+                            <button class="like-btn"><i class="far fa-heart"></i> <span class="like-count">1245</span></button>
+                            <button class="zoom-btn"><i class="fas fa-expand"></i></button>
+                        </div>
+                    </div>
+                    <div class="artwork-info">
+                        <h3>Cosmic Harmony</h3>
+                        <p class="artist">by Elena Rodriguez</p>
+                    </div>
+                </div>
+                <!-- More artwork cards -->
+            </div>
+            <a href="gallery.html" class="btn btn-outline">View All Artworks</a>
+        </div>
+
+        <!-- Rules Preview -->
+        <div class="rules-preview">
+            <h2>Contest Rules</h2>
+            <div class="rule-cards">
+                <div class="rule-card">
+                    <h3><i class="fas fa-user-check"></i> Eligibility</h3>
+                    <p>Open to artists worldwide aged 18+</p>
+                    <a href="rules.html#eligibility">Learn More</a>
+                </div>
+                <!-- More rule preview cards -->
+            </div>
+            <a href="rules.html" class="btn btn-outline">View Full Rules</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Global Art Challenge</h3>
+                    <p>Celebrating creativity worldwide since 2015</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="rules.html">Rules</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Global Art Challenge. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal (for gallery) -->
+    <div class="lightbox">
+        <div class="lightbox-content">
+            <button class="close-lightbox"><i class="fas fa-times"></i></button>
+            <div class="lightbox-image-container">
+                <img src="" alt="Artwork" class="lightbox-image">
+            </div>
+            <div class="lightbox-info">
+                <h3 class="lightbox-title"></h3>
+                <p class="lightbox-artist"></p>
+                <div class="lightbox-actions">
+                    <button class="like-btn"><i class="far fa-heart"></i> <span class="like-count">0</span></button>
+                    <button class="share-btn"><i class="fas fa-share-alt"></i> Share</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
